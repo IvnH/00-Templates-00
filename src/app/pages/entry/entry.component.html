@@ -1,8 +1,6 @@
-<!--Main layout-->
-<main class="pt-5 mx-lg-5">
-    <div class="container-fluid mt-5">
-        <!--Grid row-->
-        <div class="row wow fadeIn">
+
+    <!--Grid row-->
+    <div class="row wow fadeIn">
         
             <!--Grid column-->
             <div class="col-lg-4 col-md-4 mb-4">
@@ -11,7 +9,7 @@
                 <div class="card">
         
                     <!-- Card header -->
-                    <div class="card-header">Iniciar Secion</div>
+                    <div class="card-header"><b>Iniciar Secion</b></div>
         
                     <!--Card content-->
                     <div class="card-body">
@@ -25,6 +23,7 @@
                                 <input type="password" class="form-control" id="exampleInputPassword1">
                             </div>
                             <button type="submit" class="btn btn-success"><i class="fas fa-sign-in-alt"></i> Ingresar</button>
+                            <a routerLink="/" class="btn btn-blue"><i class="fa fa-angle-left" aria-hidden="true"></i></a>
                         </form>
         
                     </div>
@@ -34,14 +33,18 @@
         
             </div>
             <div class="col-md-8">
-                <a routerLink="/" class="btn btn-blue"><i class="fa fa-angle-left" aria-hidden="true"></i></a>
-                
+                <div class="card bg-dark text-white">
+                    <img src="https://mdbootstrap.com/img/new/slides/017.jpg" class="card-img" alt="..." height="320" />
+                    <div class="card-img-overlay">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">
+                            This is a wider card with supporting text below as a natural lead-in to additional
+                            content. This content is a little bit longer.
+                        </p>
+                    </div>
+                </div>
             </div>
-            <!--Grid column-->
-        </div>
-
+        <!--Grid column-->
     </div>
-</main>
-<!--Main layout-->
 
 

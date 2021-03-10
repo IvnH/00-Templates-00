@@ -1,0 +1,41 @@
+<!-- Heading -->
+<div class="card mb-4 wow fadeIn">
+
+    <!--Card content-->
+    <div class="card-body d-sm-flex justify-content-between">
+
+        <h4 class="mb-2 mb-sm-0 pt-1">
+            <a routerLink="/">Inicio</a>
+            <span>/</span>
+            <span>Enlace de eventos</span>
+        </h4>
+
+    </div>
+
+</div>
+<!-- Heading -->
+    <!-- Grid row -->
+    <div class="row">
+        <!-- Grid column -->
+        <div class="col-md-12 mb-3">
+            <div class="card">
+                <div class="card-body">
+                    
+                    <h1>Identificate con el tecnico<b>{{seleccion}}</b></h1>
+                    <div class="form-group">
+                        <select class="form-control col-md-6" [value]="seleccion" (change)="seleccion = $event.target.value">
+                            <option disabled selected>Elija el Tecnico</option>
+                            <option value="Pékerman Krimen">Pékerman Krimen</option>
+                            <option value="Queiroz">Brito Leal Queiroz</option>
+                            <option value="Rueda">Rueda Rivera</option>
+                        </select>
+                    </div>
+                
+                    Suma de 4 + 4 = {{ 4+4 }} <br>
+                    Resta de 8 - 3 = {{ 8-3 }} <br>
+                    Multiplicacio de 4 x 5 = {{ 4*5 }} <br>
+                    Divicion de 20 / 4 = {{ 20/4 }}
+                </div>
+            </div>
+        </div>
+    </div>

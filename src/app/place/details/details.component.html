@@ -1,0 +1,45 @@
+<!-- Heading -->
+<div class="card mb-4 wow fadeIn">
+
+    <!--Card content-->
+    <div class="card-body d-sm-flex justify-content-between">
+
+        <h4 class="mb-2 mb-sm-0 pt-1">
+            <a routerLink="../">Inicio</a>
+            <span>/</span>
+            <span>Detalles del Usuario</span>
+        </h4>
+
+    </div>
+
+</div>
+<!-- Heading -->
+    <!-- Grid row -->
+    <div class="row">
+        <!-- Grid column -->
+        <div class="col-md-6 mb-3 offset-md-3">
+            <div class="card">
+                <img src="./assets/img/ima/hombre.png" class="card-img-top" height="450px" alt="..." />
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">
+                        <b>Nombre:</b> {{firstName}} {{lastName}}
+                    </li>
+                    <li class="list-group-item">
+                        <b>Correo:</b> {{email}}
+                    </li>
+                    <li class="list-group-item">
+                        <b>N° Telefono:</b> {{phone}}
+                    </li>
+                    <li class="list-group-item">
+                        <b>Años:</b> {{age}}
+                    </li>
+                    <li class="list-group-item">
+                        <b>Hobby:</b> {{hobbies[1]}}
+                    </li>
+                    <li class="list-group-item">
+                        <b>Dirrecion:</b> {{address.street}}, {{address.City}}, {{address.state}}
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
