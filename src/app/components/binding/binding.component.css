@@ -1,0 +1,10 @@
+.success{
+    color:green;
+}
+.error{
+    color:red;
+}
+.special{
+    font-weight: 700;
+    text-decoration: underline;
+}

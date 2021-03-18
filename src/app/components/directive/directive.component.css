@@ -1,0 +1,22 @@
+.box{
+    height: 200px;
+    width: 200px;
+    text-align: center;
+    border: 1px solid #000;
+}
+
+.red{
+    background-color: red;
+}
+
+.green{
+    background-color: green;
+}
+
+.blue{
+    background-color: blue;
+}
+
+.default{
+    background-color: white;
+}

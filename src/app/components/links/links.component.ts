@@ -12,4 +12,9 @@ export class LinksComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  fullname = "Borre River";
+  currentDate = new Date();
+  fruits  = ['mango','Naranga','Manzana','Banano','Maracuya'];
+  user = {name:'Borre River',age:24,email:'borre@example.xyz'}
+
 }

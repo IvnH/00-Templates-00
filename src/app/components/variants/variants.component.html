@@ -7,7 +7,7 @@
         <h4 class="mb-2 mb-sm-0 pt-1">
             <a routerLink="/">Inicio</a>
             <span>/</span>
-            <span>WeBlog</span>
+            <span>Variables de Referencia de Plantilla</span>
         </h4>
 
     </div>
@@ -19,24 +19,19 @@
 
     <!--Grid column-->
     <div class="col-md-12 mb-4">
-        <!--Card-->
         <div class="card">
-
-            <!-- Card header -->
-            <div class="card-header">
-                <b>Weblog</b>
-            </div>
-
-            <!--Card content-->
             <div class="card-body">
-                <div *ngFor="let post of posts">
-                    <h1 class="text-center font-italic">{{post.title}}</h1>
-                    <p class="lead text-justify">{{post.body}}.</p>
+                <div class="form-outline">
+                    Ingrese Nombre : <input type="text" #name class="form-control col-5">
                 </div>
+                <button (click)="showfullname(name.value)" class="btn btn-outline-warning btn-rounded">Mostrar</button>
+                <h3><b>{{fullname}}</b></h3>
+                
+                <p #cname>Surfside Media</p>
+                
+                <h1>{{cname.textContent}}</h1>
             </div>
-
         </div>
-        <!--/.Card-->
     </div>
-    <!--Grid column-->
 </div>
+

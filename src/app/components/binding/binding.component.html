@@ -1,0 +1,54 @@
+<!-- Heading -->
+<div class="card mb-4 wow fadeIn">
+
+    <!--Card content-->
+    <div class="card-body d-sm-flex justify-content-between">
+
+        <h4 class="mb-2 mb-sm-0 pt-1">
+            <a routerLink="/">Inicio</a>
+            <span>/</span>
+            <span>Usabilidad Clase y Estilos</span>
+        </h4>
+
+    </div>
+
+</div>
+<!-- Heading -->
+<!--Grid row-->
+<div class="row wow fadeIn">
+
+    <!--Grid column-->
+    <div class="col-md-5 mb-4">
+        <div class="card">
+            <div class="card-body">
+                <h1 class="text-center bg-warning">Clases</h1>
+                <p [class]="success">Este Mensajes Success </p>
+                <p [class]="error">Este Mensajes Error </p>
+                <p [class]="special">Este Mensajes Special </p>
+                <p [class.error]="hasError">Clase Condicional Binding ...</p>
+                <p [class]="multiClasses">Multiple Case Blinding ...</p>
+                <p [class]="conditionalmultiClasses">Aplicando condicionales con multiples Clases Binding ..</p>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4 mb-4">
+        <div class="card">
+            <div class="card-body">
+                <app-stylebinding></app-stylebinding>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3 mb-4">
+        <div class="card">
+            <div class="card-body">
+                <h1 class="text-center bg-info">Bidireccional</h1>
+                <div class="form-group">
+                    Ingrese Mensaje: <input class="form-control" type="text" [(ngModel)]="msg">
+                </div>
+                
+                <h3 class="text-center"><mark>{{msg}}</mark></h3>
+            </div>
+        </div>
+    </div>
+</div>
+

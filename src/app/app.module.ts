@@ -16,6 +16,12 @@ import { OperationComponent } from './place/operation/operation.component';
 import { PlaceModule } from './place/place.module';
 import { LinksComponent } from './components/links/links.component';
 import { BlogComponent } from './components/blog/blog.component';
+import { ExploreComponent } from './components/explore/explore.component';
+import { BindingComponent } from './components/binding/binding.component';
+import { StylebindingComponent } from './components/stylebinding/stylebinding.component';
+import { DirectiveComponent } from './components/directive/directive.component';
+import { IncrementationComponent } from './components/incrementation/incrementation.component';
+import { VariantsComponent } from './components/variants/variants.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +35,13 @@ import { BlogComponent } from './components/blog/blog.component';
     DetailsComponent,
     OperationComponent,
     LinksComponent,
-    BlogComponent
+    BlogComponent,
+    ExploreComponent,
+    BindingComponent,
+    StylebindingComponent,
+    DirectiveComponent,
+    IncrementationComponent,
+    VariantsComponent
   ],
   imports: [
     BrowserModule,

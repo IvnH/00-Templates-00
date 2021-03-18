@@ -21,13 +21,13 @@
             <div class="card">
                 <div class="card-body">
                     
-                    <h1>Identificate con el tecnico<b>{{seleccion}}</b></h1>
+                    <h1>Identificate con el tecnico <b><em>{{seleccion}}</em></b></h1>
                     <div class="form-group">
-                        <select class="form-control col-md-6" [value]="seleccion" (change)="seleccion = $event.target.value">
+                        <select class="form-control col-md-4" [value]="seleccion" (change)="seleccion = $event.target.value">
                             <option disabled selected>Elija el Tecnico</option>
                             <option value="Pékerman Krimen">Pékerman Krimen</option>
-                            <option value="Queiroz">Brito Leal Queiroz</option>
-                            <option value="Rueda">Rueda Rivera</option>
+                            <option value="Brito Leal Queiroz">Brito Leal Queiroz</option>
+                            <option value="Rueda Rivera">Rueda Rivera</option>
                         </select>
                     </div>
                 

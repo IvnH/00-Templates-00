@@ -24,12 +24,26 @@
         
             <!-- Card header -->
             <div class="card-header bg-info">
-                <b>Weblog</b>
+                <b>Pipes</b>
             </div>
         
             <!--Card content-->
             <div class="card-body">
-                <app-blog></app-blog>
+                {{fullname | uppercase}}
+                <!--Letras Mayuscula-->
+                {{fullname | lowercase}}
+                <!--Letras Minuscula--> <br>
+                <!--{{currentDate | date:'d/M/y'}} fecha-->
+                {{currentDate | date:'shortTime'}}
+                <!--Hora--> <br>
+                {{user | json}}
+                <!--mostrar un array de datos--> <br>
+                {{25.12 | currency:'USD'}}
+                <!--Signo Peso--> <br>
+                {{45.3456797766 | number:'2.2-2'}}
+                <!--Redondear Decimales--> <br>
+                {{fruits | slice:1:3 }}
+                <!--Mostrar determinadoselementos de un Array-->
             </div>
         
         </div>
@@ -45,24 +59,24 @@
 
         <!-- List group links -->
         <div class="list-group list-group-flush">
-            <a class="list-group-item border-info list-group-item-action waves-effect">Sales
+            <a routerLink="../Direcctivas"  class="list-group-item border-info list-group-item-action waves-effect">Direcctivas
                 <span class="badge badge-success badge-pill pull-right">22%
                     <i class="fas fa-arrow-up ml-1"></i>
                 </span>
             </a>
-            <a class="list-group-item border-info list-group-item-action waves-effect">Traffic
+            <a routerLink="../Clases/Estilos" class="list-group-item border-info list-group-item-action waves-effect">Usabilidad
                 <span class="badge badge-danger badge-pill pull-right">5%
                     <i class="fas fa-arrow-down ml-1"></i>
                 </span>
             </a>
-            <a class="list-group-item border-info list-group-item-action waves-effect">Orders
-                <span class="badge badge-primary badge-pill pull-right">14</span>
+            <a routerLink="../Web/Blog" class="list-group-item border-info list-group-item-action waves-effect">WeBlog
+                <span class="badge badge-primary badge-pill pull-right">14%</span>
             </a>
-            <a class="list-group-item border-info list-group-item-action waves-effect">Issues
-                <span class="badge badge-primary badge-pill pull-right">123</span>
+            <a routerLink="../Explorar/Registros" class="list-group-item border-info list-group-item-action waves-effect">Explorar
+                <span class="badge badge-primary badge-pill pull-right">12%</span>
             </a>
             <a routerLink="../Detalles/Usuarios" class="list-group-item border-info list-group-item-action waves-effect">Usuario
-                <span class="badge badge-primary badge-pill pull-right">8</span>
+                <span class="badge badge-primary badge-pill pull-right">8%</span>
             </a>
         </div>
         <!-- List group links -->
